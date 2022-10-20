@@ -1,1 +1,5 @@
+/*Code from: https://stackoverflow.com/questions/18065062/bootstrap-css-space-between-buttons-in-navbar*/
 
+.btn {
+    margin-left: 10px;
+}
