@@ -8,8 +8,9 @@ h2 {
   padding: 10px;
 }
 
-h3 {
-  
+h5 {
+  text-align: center;
+  color: black;
 }
 
 .btn {
@@ -18,20 +19,20 @@ h3 {
 
 .main {
   display: flex;
-  height: 600px;
+  height: auto
 }
 
 .img-container {
   margin: 50px;
   padding: 20px;
   float:left;
-  width: 900px
+  width: 100%;
 }
 
 .form-container {
   margin: 50px;
   padding: 20px;
-  width: 400px;
+  width: 100%;
   background-color: #efefef;
   float:left
 }
