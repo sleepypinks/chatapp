@@ -1,5 +1,51 @@
-/*Code from: https://stackoverflow.com/questions/18065062/bootstrap-css-space-between-buttons-in-navbar*/
+body {
+  background-color: #008cff
+}
+
+h2 {
+  text-align: center;
+  color: #ffe53d;
+  padding: 10px;
+}
+
+h3 {
+  
+}
 
 .btn {
     margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  height: 600px;
+}
+
+.img-container {
+  margin: 50px;
+  padding: 20px;
+  float:left;
+  width: 900px
+}
+
+.form-container {
+  margin: 50px;
+  padding: 20px;
+  width: 400px;
+  background-color: #efefef;
+  float:left
+}
+
+@media (max-width: 700px) {
+	.form-container {
+		display: block;
+	}
+
+	.img-container  {
+		display: none;
+	}
+  
+  .title {
+    display: block;
+  }
 }
