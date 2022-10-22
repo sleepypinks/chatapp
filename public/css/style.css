@@ -13,40 +13,77 @@ h5 {
   color: black;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: #ffe53d
+}
+
+.navbar button:hover {
+  background-color: #ddd;
+  color: #ffe53d
+}
+
 .btn {
     margin-left: 10px;
 }
 
 .main {
   display: flex;
-  height: auto
+  flex-direction: row;
 }
 
 .img-container {
+  flex: 55%;
   margin: 50px;
   padding: 20px;
-  float:left;
-  width: 100%;
+  float: left;
 }
 
 .form-container {
+  flex: 35%;
   margin: 50px;
-  padding: 20px;
-  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #efefef;
-  float:left
+  float:left;
 }
 
-@media (max-width: 700px) {
-	.form-container {
-		display: block;
-	}
 
-	.img-container  {
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+  
+  .navbar {
+    width: auto;
+  }
+  
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 400px) {
+  video  {
 		display: none;
 	}
   
-  .title {
-    display: block;
+  .img-container {
+    margin-bottom: 10px;
   }
+  
+  .form-container {
+    margin-top: 10px;
 }
